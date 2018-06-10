@@ -1,0 +1,6 @@
+FROM java:8
+#WORKDIR /eureka-naming-server
+COPY eureka-naming-server/target/eureka-naming-server.jar app.jar
+#RUN bash -c 'touch/app.jar'
+EXPOSE 8010
+ENTRYPOINT ["java","-jar","app.jar"]		

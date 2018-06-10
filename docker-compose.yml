@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  namingservice:
+    build: 
+      context: .
+      dockerfile: ./EurekaDockerfile
+    #image: eureka-naming-server
+    ports:
+      - "8010:8010"
+    #networks:
+    #  - network1
+                 
+                     
+#networks:
+#  network1:
