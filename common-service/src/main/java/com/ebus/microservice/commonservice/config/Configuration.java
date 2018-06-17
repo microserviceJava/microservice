@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix="config-server")
+@ConfigurationProperties(prefix="common-service")
 public class Configuration {
 	
 	private int autoApprovalInterval;
